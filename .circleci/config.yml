@@ -18,7 +18,7 @@ jobs:
             - "94:e5:20:73:dd:b1:6a:51:e1:b5:fb:5f:24:82:0d:15"
       - checkout
       - run:
-          name: Install
+          name: Instal
           command: yarn install
       - run:
           name: Build
