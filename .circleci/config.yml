@@ -9,10 +9,18 @@ jobs:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:14
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
-      - run: echo "hello"
-      - run: npm -v
+      - add_ssh_keys:
+          fingerprints:
+            - "94:e5:20:73:dd:b1:6a:51:e1:b5:fb:5f:24:82:0d:15"
+      - checkout
+      - run:
+          name: Install
+          command: yarn install
+      - run:
+          name: Build
+          command: yarn build
           
