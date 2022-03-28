@@ -1,0 +1,32 @@
+{
+  "language" : "zh-hans",
+  "title": "koala-blog",
+  "plugins": [
+      "hide-element",
+      "back-to-top-button",
+      "code",
+      "splitter",
+      "-lunr",
+      "-search",
+      "search-pro",
+      "custom-favicon",
+      "popup",
+      "-sharing",
+      "sharing-plus",
+      "codetabs",
+      "anchor-navigation-ex",
+      "expandable-chapters",
+      "insert-logo-link"
+  ],
+  "pluginsConfig": {
+      "hide-element": {
+        "elements": [".gitbook-link"]
+      },
+      "expandable-chapters":{},
+      "favicon": "./assets/favicon.ico",
+      "anchor-navigation-ex": {
+        "showLevel": false,
+        "showGoTop": false
+    }
+  }
+}
